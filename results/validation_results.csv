@@ -1,0 +1,73 @@
+model,feature_set,params,param_value,val_accuracy,val_macro_f1,train_time_s
+Naive Bayes,baseline,{'alpha': 0.01},0.01,0.88874,0.88923,0.01
+Naive Bayes,baseline,{'alpha': 0.05},0.05,0.88942,0.89011,0.01
+Naive Bayes,baseline,{'alpha': 0.1},0.1,0.89145,0.89219,0.01
+Naive Bayes,baseline,{'alpha': 0.3},0.3,0.88467,0.88546,0.0
+Naive Bayes,baseline,{'alpha': 0.5},0.5,0.88331,0.88412,0.01
+Naive Bayes,baseline,{'alpha': 1.0},1.0,0.88602,0.88671,0.01
+Naive Bayes,improved,{'alpha': 0.01},0.01,0.92469,0.92588,0.06
+Naive Bayes,improved,{'alpha': 0.05},0.05,0.92198,0.92312,0.06
+Naive Bayes,improved,{'alpha': 0.1},0.1,0.92198,0.92299,0.05
+Naive Bayes,improved,{'alpha': 0.3},0.3,0.91316,0.91373,0.06
+Naive Bayes,improved,{'alpha': 0.5},0.5,0.9118,0.91242,0.05
+Naive Bayes,improved,{'alpha': 1.0},1.0,0.90841,0.90883,0.06
+Naive Bayes,header_removed,{'alpha': 0.01},0.01,0.88467,0.88546,0.02
+Naive Bayes,header_removed,{'alpha': 0.05},0.05,0.88535,0.88617,0.02
+Naive Bayes,header_removed,{'alpha': 0.1},0.1,0.88263,0.8835,0.02
+Naive Bayes,header_removed,{'alpha': 0.3},0.3,0.87992,0.8807,0.02
+Naive Bayes,header_removed,{'alpha': 0.5},0.5,0.87585,0.87649,0.02
+Naive Bayes,header_removed,{'alpha': 1.0},1.0,0.86092,0.86162,0.02
+Linear SVM,baseline,{'C': 0.01},0.01,0.85617,0.85687,0.28
+Linear SVM,baseline,{'C': 0.05},0.05,0.89077,0.89134,0.36
+Linear SVM,baseline,{'C': 0.1},0.1,0.90163,0.90206,0.34
+Linear SVM,baseline,{'C': 0.3},0.3,0.91588,0.91623,0.37
+Linear SVM,baseline,{'C': 0.5},0.5,0.91655,0.91695,0.4
+Linear SVM,baseline,{'C': 1.0},1.0,0.91655,0.91689,0.39
+Linear SVM,baseline,{'C': 3.0},3.0,0.91859,0.91889,0.45
+Linear SVM,baseline,{'C': 5.0},5.0,0.91588,0.91615,0.49
+Linear SVM,improved,{'C': 0.01},0.01,0.90434,0.90506,0.45
+Linear SVM,improved,{'C': 0.05},0.05,0.91927,0.91982,0.63
+Linear SVM,improved,{'C': 0.1},0.1,0.92537,0.92571,0.66
+Linear SVM,improved,{'C': 0.3},0.3,0.93284,0.93309,0.99
+Linear SVM,improved,{'C': 0.5},0.5,0.93826,0.93849,1.11
+Linear SVM,improved,{'C': 1.0},1.0,0.94301,0.94309,1.55
+Linear SVM,improved,{'C': 3.0},3.0,0.94301,0.94322,2.39
+Linear SVM,improved,{'C': 5.0},5.0,0.9403,0.94056,2.74
+Linear SVM,header_removed,{'C': 0.01},0.01,0.84532,0.84489,0.12
+Linear SVM,header_removed,{'C': 0.05},0.05,0.85821,0.85808,0.17
+Linear SVM,header_removed,{'C': 0.1},0.1,0.87042,0.87033,0.18
+Linear SVM,header_removed,{'C': 0.3},0.3,0.88399,0.88412,0.22
+Linear SVM,header_removed,{'C': 0.5},0.5,0.88738,0.88771,0.24
+Linear SVM,header_removed,{'C': 1.0},1.0,0.88467,0.88515,0.35
+Linear SVM,header_removed,{'C': 3.0},3.0,0.88399,0.88472,0.7
+Linear SVM,header_removed,{'C': 5.0},5.0,0.88263,0.88323,0.99
+Logistic Regression,baseline,{'C': 0.1},0.1,0.84328,0.84473,0.33
+Logistic Regression,baseline,{'C': 0.5},0.5,0.88535,0.88668,0.62
+Logistic Regression,baseline,{'C': 1.0},1.0,0.89756,0.89852,0.95
+Logistic Regression,baseline,{'C': 3.0},3.0,0.91113,0.91165,1.39
+Logistic Regression,baseline,{'C': 5.0},5.0,0.90841,0.90881,1.14
+Logistic Regression,baseline,{'C': 10.0},10.0,0.91316,0.91353,1.31
+Logistic Regression,baseline,{'C': 100.0},100.0,0.91588,0.91617,1.14
+Logistic Regression,improved,{'C': 0.1},0.1,0.90027,0.90114,2.92
+Logistic Regression,improved,{'C': 0.5},0.5,0.91384,0.91481,6.17
+Logistic Regression,improved,{'C': 1.0},1.0,0.92266,0.92329,6.14
+Logistic Regression,improved,{'C': 3.0},3.0,0.93148,0.93213,13.22
+Logistic Regression,improved,{'C': 5.0},5.0,0.93284,0.9335,15.2
+Logistic Regression,improved,{'C': 10.0},10.0,0.93487,0.93529,6.54
+Logistic Regression,improved,{'C': 100.0},100.0,0.93962,0.93996,14.94
+Logistic Regression,header_removed,{'C': 0.1},0.1,0.84125,0.84065,0.93
+Logistic Regression,header_removed,{'C': 0.5},0.5,0.85753,0.85777,1.73
+Logistic Regression,header_removed,{'C': 1.0},1.0,0.86567,0.86606,3.38
+Logistic Regression,header_removed,{'C': 3.0},3.0,0.87381,0.87436,4.0
+Logistic Regression,header_removed,{'C': 5.0},5.0,0.8772,0.87781,4.92
+Logistic Regression,header_removed,{'C': 10.0},10.0,0.87585,0.87643,5.93
+Logistic Regression,header_removed,{'C': 100.0},100.0,0.87313,0.87362,5.44
+MLP,baseline,"{'hidden_layer_sizes': (100,), 'alpha': 0.0001}","{'hidden_layer_sizes': (100,), 'alpha': 0.0001}",0.91791,0.91839,26.24
+MLP,baseline,"{'hidden_layer_sizes': (100,), 'alpha': 0.01}","{'hidden_layer_sizes': (100,), 'alpha': 0.01}",0.91655,0.91706,22.75
+MLP,baseline,"{'hidden_layer_sizes': (100, 50), 'alpha': 0.0001}","{'hidden_layer_sizes': (100, 50), 'alpha': 0.0001}",0.90638,0.90706,15.25
+MLP,improved,"{'hidden_layer_sizes': (100,), 'alpha': 0.0001}","{'hidden_layer_sizes': (100,), 'alpha': 0.0001}",0.92469,0.92591,352.37
+MLP,improved,"{'hidden_layer_sizes': (100,), 'alpha': 0.01}","{'hidden_layer_sizes': (100,), 'alpha': 0.01}",0.92198,0.92313,372.32
+MLP,improved,"{'hidden_layer_sizes': (100, 50), 'alpha': 0.0001}","{'hidden_layer_sizes': (100, 50), 'alpha': 0.0001}",0.91995,0.92061,464.49
+MLP,header_removed,"{'hidden_layer_sizes': (100,), 'alpha': 0.0001}","{'hidden_layer_sizes': (100,), 'alpha': 0.0001}",0.88738,0.88805,183.68
+MLP,header_removed,"{'hidden_layer_sizes': (100,), 'alpha': 0.01}","{'hidden_layer_sizes': (100,), 'alpha': 0.01}",0.88399,0.88475,188.09
+MLP,header_removed,"{'hidden_layer_sizes': (100, 50), 'alpha': 0.0001}","{'hidden_layer_sizes': (100, 50), 'alpha': 0.0001}",0.87449,0.87485,139.54

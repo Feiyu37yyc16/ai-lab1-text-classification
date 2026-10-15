@@ -1,0 +1,6 @@
+best_model=Linear SVM
+best_feature_set=improved
+best_params={'C': 1.0}
+val_accuracy=0.9430
+val_macro_f1=0.9431
+num_test_predictions=2457
