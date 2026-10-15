@@ -42,9 +42,24 @@ python main.py
 
 - 随机种子固定为 42，保证结果可复现；
 - 评价指标：准确率（accuracy）、宏平均 F1（macro-F1）、每类精确率/召回率/F1；
-- 文本清洗：去除邮件头、引用行、邮箱与网址、数字、标点，统一小写；
+- 文本清洗：去除邮件头、引用行、邮箱与网址、数字、标点，统一小写（用于消融对照）；
 - 模型与调参网格：
   - MultinomialNB：`alpha ∈ {0.01, 0.05, 0.1, 0.3, 0.5, 1.0}`
-  - LinearSVC：`C ∈ {0.1, 0.3, 0.5, 1, 3, 5, 10}`
+  - LinearSVC：`C ∈ {0.01, 0.05, 0.1, 0.3, 0.5, 1, 3, 5}`
   - LogisticRegression：`C ∈ {0.1, 0.5, 1, 3, 5, 10, 100}`
   - MLPClassifier：隐藏层结构与 `alpha` 共 3 组配置，启用 early stopping
+
+## 实验结论
+
+在统一验证集上比较 4 种模型 × 3 组特征（baseline / improved / 去除邮件头消融），最优配置为
+**unigram+bigram TF-IDF（sublinear TF）+ 线性 SVM（C=1.0）**，验证集准确率 **94.30%**、macro-F1 **0.9431**，
+该配置在全部训练数据上重新训练后输出测试集预测 `prediction.csv`。去除邮件头后各模型一致下降约 5 个百分点，
+说明模型会利用邮件头中的机构、域名等元数据“捷径”，属于不可迁移的虚假信号。
+
+## 上传到 GitHub
+
+```bash
+# 在 GitHub 上新建空仓库 ai-lab1-text-classification（不要勾选 README）
+git remote add origin https://github.com/Feiyu37yyc16/ai-lab1-text-classification.git
+git push -u origin main
+```
